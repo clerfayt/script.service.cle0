@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="30000">
+        <setting label="30001" id="comlabel1" type="text" default="Beep"/>
+        <setting label="30002" id="command1" type="text" default="speaker-test -t sine -f 800 -l 1"/>
+    	<setting type="sep"/>
+        <setting label="30003" id="comlabel2" type="text" default="Beep"/>
+        <setting label="30004" id="command2" type="text" default="speaker-test -t sine -f 800 -l 1"/>
+    	<setting type="sep"/>
+        <setting label="30005" id="comlabel3" type="text" default="Beep"/>
+        <setting label="30006" id="command3" type="text" default="speaker-test -t sine -f 800 -l 1"/>
+    	<setting type="sep"/>
+        <setting label="30007" id="comlabel4" type="text" default="Beep"/>
+        <setting label="30008" id="command4" type="text" default="speaker-test -t sine -f 800 -l 1"/>
+    	<setting type="sep"/>
+        <setting label="30009" id="comlabel5" type="text" default="Beep"/>
+        <setting label="30010" id="command5" type="text" default="speaker-test -t sine -f 800 -l 1"/>
+    </category>
+</settings>
