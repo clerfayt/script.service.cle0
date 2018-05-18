@@ -3,7 +3,6 @@
 
 import xbmcaddon
 import xbmcgui
-import time
 import subprocess
 
 from resources.lib.utils import *
@@ -19,7 +18,6 @@ commands = [MySettings.commandString1(), MySettings.commandString2(), MySettings
 if ((com >= 0 and com < len(commands)) and commands[com]):
     #only execute if commands[com] is not empty
     try:
-        subprocess.Popen(args=commands[com])
-    except:
-        myLog("The specified command (" + commands[com] + ") yielded an error!")
-
+        subprocess.Popen(args=commands[com].split(" "))
+    except OSError as err:
+        myLog("The specified command (" + commands[com] + ") yielded an error! OSError: {0}".format(err))
